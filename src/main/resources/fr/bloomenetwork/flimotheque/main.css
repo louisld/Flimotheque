@@ -1,0 +1,59 @@
+.close-button{
+	-fx-content-display: graphic-only;
+	-icon-paint: black;
+	-fx-border-radius: none;
+	-fx-border-style: none;
+	-fx-background-color: white;
+}
+.close-button .close-icon{
+	-fx-background-color: -icon-paint;
+	-size: 15;
+    -fx-min-height: -size;
+    -fx-min-width: -size;
+    -fx-max-height: -size;
+    -fx-max-width: -size;
+	-fx-shape: "M342.622,330.438L183.814,172.494L341.79,13.646c3.117-3.133,3.105-8.199-0.028-11.316c-3.133-3.117-8.199-3.105-11.316,0.028l0,0L172.502,161.182L13.67,3.206C10.537,0.089,5.471,0.101,2.354,3.234s-3.105,8.199,0.028,11.316l0,0L161.19,172.494L3.23,331.326c-3.117,3.133-3.105,8.199,0.028,11.316c3.133,3.117,8.199,3.105,11.316-0.028l157.928-158.808l158.8,157.976c3.133,3.117,8.199,3.105,11.316-0.028c3.117-3.133,3.105-8.199-0.028-11.316l0,0L342.622,330.438z"
+}
+.close-button:hover{
+	-icon-paint: white;
+	-fx-background-color: red;
+}
+.maximize-button{
+	-fx-content-display: graphic-only;
+	-icon-paint: black;
+	-fx-background-color: white;
+	-fx-border-radius: none;
+	-fx-border-style: none;
+}
+.maximize-button .maximize-icon{
+	-fx-background-color: -icon-paint;
+	-fx-shape: "m465.016 0h-447.793c-9.52 0-17.223 7.703-17.223 17.223v447.793c0 9.52 7.703 17.223 17.223 17.223h447.793c9.52 0 17.223-7.703 17.223-17.223v-447.793c0-9.52-7.703-17.223-17.223-17.223zm-17.223 447.793h-413.347v-413.347h413.348v413.347z";
+	-size: 15;
+    -fx-min-height: -size;
+    -fx-min-width: -size;
+    -fx-max-height: -size;
+    -fx-max-width: -size;	
+}
+.maximize-button:hover{
+	-fx-background-color: #FAFAFA;
+}
+.minimize-button{
+	-fx-content-display: graphic-only;
+	-icon-paint: black;
+	-fx-background-color: white;
+	-fx-border-radius: none;
+	-fx-border-style: none;
+}
+.minimize-button .minimize-icon{
+	-fx-background-color: -icon-paint;
+	-fx-shape: "m437.332031.167969h-405.332031c-17.664062 0-32 14.335937-32 32v21.332031c0 17.664062 14.335938 32 32 32h405.332031c17.664063 0 32-14.335938 32-32v-21.332031c0-17.664063-14.335937-32-32-32zm0 0"; 
+	-size-h: 18;
+	-size-v: 3;
+    -fx-min-height: -size-v;
+    -fx-min-width: -size-h;
+    -fx-max-height: -size-v;
+    -fx-max-width: -size-h;	
+}
+.minimize-button:hover{
+	-fx-background-color: #FAFAFA;
+}

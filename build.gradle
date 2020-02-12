@@ -1,0 +1,37 @@
+plugins {
+  id 'application'
+  id 'java'
+  id 'org.openjfx.javafxplugin' version '0.0.8'
+  id 'eclipse'
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+	implementation 'de.jensd:fontawesomefx-commons:11.0'
+	implementation 'com.github.goxr3plus:FX-BorderlessScene:4.4.0'
+	compile group: 'org.controlsfx', name: 'controlsfx', version: '11.0.1'
+}
+
+javafx {
+    version = "13"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+eclipse {
+    classpath {
+        file {
+            whenMerged {
+                entries.findAll { it.properties.kind.equals('lib') }.each {
+                    it.entryAttributes['module'] = 'true'
+                }
+            }
+        }
+    }
+}
+
+mainClassName = 'fr.bloomenetwork.flimotheque.Main'
